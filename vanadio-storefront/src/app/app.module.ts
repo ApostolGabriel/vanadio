@@ -8,7 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { EventsComponent } from './components/events/events.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HeaderMenuComponent } from './components/header/header-menu/header-menu.component';
+import { HeaderMenuComponent } from './components/header-menu/header-menu.component';
 
 @NgModule({
   declarations: [

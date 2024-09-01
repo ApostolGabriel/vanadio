@@ -1,0 +1,55 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 12rem;
+  background-color: #Ebeae8;
+  align-items: center;
+  gap: 30px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.menu-button {
+  background-color: transparent;
+  height: 16px;
+  width: 16px;
+  border: none;
+  cursor: pointer;
+  background-image: url("../../../../public/hamburger.svg");
+}
+
+.menu-button:hover {
+  background-image: url("../../../../public/hamburger-hover.svg");
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+@media (max-width: 710px) {
+  ul {
+    font-size: 20px;
+    height: auto;
+  }
+}
