@@ -1,0 +1,89 @@
+footer {
+    height: 150px;
+    font-size: 17px;
+    font-weight: 200;
+    background-color: #Ebeae8;
+}
+
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-width: 1px;
+    border-bottom-color: #343434;
+    border-bottom-style: solid;
+    border-top-width: 2px;
+    border-top-color: #E52F00;
+    border-top-style: solid;
+}
+
+.footer-left-col {
+    padding-left: 20px;
+    width: 300px;
+}
+
+.footer-logo {
+    height: 96px;
+}
+
+.footer-social {
+    height: 32px;
+    display: block; 
+    width: 32px;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    text-decoration: none; 
+    transition: background-image 0.5s ease; 
+}
+
+.footer-center-col {
+    width: 160px;
+}
+
+.footer-right-col {
+    width: 300px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 60px;
+}
+
+#footer-insta {
+    background-image: url("../../../../public/instagram-icon.svg");
+}
+
+#footer-insta:hover {
+    background-image: url("../../../../public/instagram-icon-hover.svg");
+}
+
+#footer-fb {
+    background-image: url("../../../../public/facebook-icon.svg");
+}
+
+#footer-fb:hover {
+    background-image: url("../../../../public/facebook-icon-hover.svg");
+}
+
+#footer-whatsapp {
+    background-image: url("../../../../public/whatsapp-icon.svg");
+}
+
+#footer-whatsapp:hover {
+    background-image: url("../../../../public/whatsapp-icon-hover.svg");
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-left: 20px;
+}
+
+
+@media (max-width: 710px) {
+    
+}
+

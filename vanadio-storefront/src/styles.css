@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+
+  box-sizing: border-box;
+}
+
+.text-link {
+  color: #393838;
+  font-size: 24px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.text-link::after {
+  transition: all ease-in-out .2s;
+  background: none repeat scroll 0 0 #E52F00;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+}
+
+.text-link:hover::after {
+  width: 100%;
+}

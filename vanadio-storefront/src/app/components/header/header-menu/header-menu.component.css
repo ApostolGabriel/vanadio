@@ -1,0 +1,20 @@
+
+ul {
+    flex-direction: column;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+
+
+@media (max-width: 710px){
+    ul {
+        flex-direction: column;
+        background-color: #Ebeae8;
+        font-size: 20px;
+        height: 40px;
+    }
+}
