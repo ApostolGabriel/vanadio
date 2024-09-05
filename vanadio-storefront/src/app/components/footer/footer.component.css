@@ -3,6 +3,7 @@ footer {
     font-size: 17px;
     font-weight: 200;
     background-color: #Ebeae8;
+    width: 100%;
 }
 
 .footer-middle {
@@ -15,6 +16,7 @@ footer {
     border-top-width: 2px;
     border-top-color: #E52F00;
     border-top-style: solid;
+    width: 100%;
 }
 
 .footer-left-col {
@@ -84,6 +86,23 @@ footer {
 
 
 @media (max-width: 710px) {
-    
+    footer {
+        font-size: 16px;
+        height: 374px;
+    }   
+
+    .footer-middle {
+        flex-direction: column;
+    }
+
+    .footer-legal {
+        padding-left: 20px;
+    }
+
+    .footer-socials {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-bottom: 8px;
+    }
 }
 

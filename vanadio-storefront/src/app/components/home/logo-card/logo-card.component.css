@@ -1,0 +1,32 @@
+.logo-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 20px #464542;
+}
+
+.logo-background {
+    background-color: #Ebeae8;
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 300px;
+}
+
+.socials-background {
+    background-color: #ffffff;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.socials-centering {
+    width: 40%;
+}

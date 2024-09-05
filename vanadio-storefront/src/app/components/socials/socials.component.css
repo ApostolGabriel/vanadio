@@ -1,0 +1,42 @@
+.footer-socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.footer-social {
+    height: 32px;
+    display: block; 
+    width: 32px;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    text-decoration: none; 
+    transition: background-image 0.5s ease; 
+}
+
+#footer-insta {
+    background-image: url("../../../../public/instagram-icon.svg");
+}
+
+#footer-insta:hover {
+    background-image: url("../../../../public/instagram-icon-hover.svg");
+}
+
+#footer-fb {
+    background-image: url("../../../../public/facebook-icon.svg");
+}
+
+#footer-fb:hover {
+    background-image: url("../../../../public/facebook-icon-hover.svg");
+}
+
+#footer-whatsapp {
+    background-image: url("../../../../public/whatsapp-icon.svg");
+}
+
+#footer-whatsapp:hover {
+    background-image: url("../../../../public/whatsapp-icon-hover.svg");
+}

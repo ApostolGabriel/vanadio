@@ -9,6 +9,10 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { EventsComponent } from './components/events/events.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderMenuComponent } from './components/header/header-menu/header-menu.component';
+import { ColorBannerComponent } from './components/home/color-banner/color-banner.component';
+import { LogoCardComponent } from './components/home/logo-card/logo-card.component';
+import { SocialsComponent } from './components/socials/socials.component';
+import { PresentationComponent } from './components/home/presentation/presentation.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +23,10 @@ import { HeaderMenuComponent } from './components/header/header-menu/header-menu
     EventsComponent,
     FooterComponent,
     HeaderMenuComponent,
+    ColorBannerComponent,
+    LogoCardComponent,
+    SocialsComponent,
+    PresentationComponent,
   ],
   imports: [
     BrowserModule,
