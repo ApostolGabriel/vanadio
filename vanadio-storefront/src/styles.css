@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-body {
+p, body, a {
   font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -10,18 +10,8 @@ body {
     "YTLC" 500;
 
   box-sizing: border-box;
-}
-
-.text-link {
-  color: #393838;
-  font-size: 24px;
-  text-decoration: none;
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  display: inline-block;
-  margin-right: 10px;
-  margin-left: 10px;
+  color: #696969;
+  font-size: 17px;
 }
 
 .text-link::after {
@@ -35,4 +25,26 @@ body {
 
 .text-link:hover::after {
   width: 100%;
+}
+
+.button-for-page {
+  height: 48px;
+  width: 180px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #CF340B;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-out;
+}
+
+.button-for-page:hover {
+  background-color: #696969;
+}
+
+.button-for-page:active {
+  margin: 2px 2px 2px 2px;
+  height: 40px;
+  width: 176px;
+  box-shadow: inset 2px 0px 20px #1c1c1c;
 }

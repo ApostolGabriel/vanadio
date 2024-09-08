@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import {Component, HostListener, Input} from '@angular/core';
 
 @Component({
@@ -7,6 +8,8 @@ import {Component, HostListener, Input} from '@angular/core';
 })
 export class HeaderComponent {
   @Input() menuToggle: boolean = false
+
+  constructor(private router: Router) {}
 
   openMenu() {
     this.menuToggle = !this.menuToggle;
@@ -23,4 +26,8 @@ export class HeaderComponent {
       this.menuToggle = false;
     }
   }
+  isActive(route: string): boolean {
+    return this.router.url === route;
+  }
+
 }

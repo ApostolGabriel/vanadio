@@ -3,6 +3,7 @@ footer {
     font-size: 17px;
     font-weight: 200;
     background-color: #Ebeae8;
+    width: 100%;
 }
 
 .footer-middle {
@@ -15,6 +16,7 @@ footer {
     border-top-width: 2px;
     border-top-color: #E52F00;
     border-top-style: solid;
+    width: 100%;
 }
 
 .footer-left-col {
@@ -26,17 +28,6 @@ footer {
     height: 96px;
 }
 
-.footer-social {
-    height: 32px;
-    display: block; 
-    width: 32px;
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    text-decoration: none; 
-    transition: background-image 0.5s ease; 
-}
-
 .footer-center-col {
     width: 160px;
 }
@@ -46,35 +37,9 @@ footer {
 }
 
 .footer-socials {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding-left: 20px;
     padding-right: 60px;
-}
-
-#footer-insta {
-    background-image: url("../../../../public/instagram-icon.svg");
-}
-
-#footer-insta:hover {
-    background-image: url("../../../../public/instagram-icon-hover.svg");
-}
-
-#footer-fb {
-    background-image: url("../../../../public/facebook-icon.svg");
-}
-
-#footer-fb:hover {
-    background-image: url("../../../../public/facebook-icon-hover.svg");
-}
-
-#footer-whatsapp {
-    background-image: url("../../../../public/whatsapp-icon.svg");
-}
-
-#footer-whatsapp:hover {
-    background-image: url("../../../../public/whatsapp-icon-hover.svg");
 }
 
 .footer-bottom {
@@ -82,8 +47,48 @@ footer {
     padding-left: 20px;
 }
 
+li {
+    list-style-type: none;
+    position: relative;
+}
+
+li::before {
+    content: ''; 
+    display: inline-block; 
+    width: 8px; 
+    height: 8px; 
+    background-color: black; 
+    border-radius: 2px; 
+    margin-right: 10px; 
+    position: absolute; 
+    left: -15px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+li:hover {
+    color: #E52F00;
+    cursor: pointer;
+}
 
 @media (max-width: 710px) {
-    
+    footer {
+        font-size: 16px;
+        height: 374px;
+    }   
+
+    .footer-middle {
+        flex-direction: column;
+    }
+
+    .footer-legal {
+        padding-left: 20px;
+    }
+
+    .footer-socials {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-bottom: 8px;
+    }
 }
 

@@ -43,6 +43,20 @@ app-header-menu {
 app-hamburger {
   display: none;
 }
+a {
+    color: #393838;
+    font-size: 24px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.selected {
+    border-bottom: 2px solid #E52F00;
+}
 
 @media (max-width: 710px) {
 
