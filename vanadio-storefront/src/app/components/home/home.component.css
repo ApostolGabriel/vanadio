@@ -16,7 +16,7 @@
 .home-logo {
     position: absolute;
     top: 32px;
-    left: 30%;
+    left: 20%;
     bottom: 32px;
     margin-right: 100px;
     width: 30%;
@@ -26,8 +26,8 @@
 
 .home-presentation {
     grid-column: 2;
-    margin-top: 64px;
-    margin-left: 50%;
-    width: 36%;
-    height: 80%;
+    margin-top: 32px;
+    margin-left: 30%;
+    width: 440px;
+    margin-bottom: 32px;
 }

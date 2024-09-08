@@ -13,6 +13,8 @@ import { ColorBannerComponent } from './components/home/color-banner/color-banne
 import { LogoCardComponent } from './components/home/logo-card/logo-card.component';
 import { SocialsComponent } from './components/socials/socials.component';
 import { PresentationComponent } from './components/home/presentation/presentation.component';
+import { ContactRegistrationComponent } from './components/contact-us/contact-registration/contact-registration.component';
+import { ContactBannerComponent } from './components/contact-us/contact-banner/contact-banner.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { PresentationComponent } from './components/home/presentation/presentati
     LogoCardComponent,
     SocialsComponent,
     PresentationComponent,
+    ContactRegistrationComponent,
+    ContactBannerComponent,
   ],
   imports: [
     BrowserModule,

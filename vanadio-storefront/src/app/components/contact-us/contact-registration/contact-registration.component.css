@@ -1,0 +1,92 @@
+.registration-background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 20px #464542;
+    background-color: #Ebeae8;
+    border-radius: 20px;
+}
+
+.registration-content {
+    margin: 60px 40px 60px 40px;
+}
+
+.registration-bar {
+    background-color: #cb1a1a;
+    height: 8px;
+    width: 60%;
+    border-radius: 2px;
+}
+
+h1 {
+    color: #6d6d6d;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text] {
+    border: none;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    resize: none;
+    font-size: 17px;
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 120px;
+}
+
+input[type=text]::placeholder, textarea::placeholder {
+    color: #B6B8B7;
+}
+
+input[type=text], textarea {
+    transition: box-shadow 0.3s ease-out;
+    color: #696969;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+}
+
+input[type=text]:focus, textarea:focus {
+    box-shadow: 2px 2px 20px #767470 ;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+
+.button-background {
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -8,8 +8,8 @@
         <app-header-menu *ngIf="menuToggle"></app-header-menu>
     </div>
     <ul>
-        <li><a class="text-link" routerLink="/">ACASĂ</a></li>
-        <li><a class="text-link" routerLink="/events">EVENIMENTE</a></li>
-        <li><a class="text-link" routerLink="/contact">CONTACT</a></li>
+        <li><a [ngClass]="isActive('/') ? 'selected' : 'text-link'" [routerLink]="'/'">ACASĂ</a></li>
+        <li><a [ngClass]="isActive('/events') ? 'selected' : 'text-link'" [routerLink]="'/events'">EVENIMENTE</a></li>
+        <li><a [ngClass]="isActive('/contact') ? 'selected' : 'text-link'" [routerLink]="'/contact'">CONTACT</a></li>
     </ul>
 </nav>
