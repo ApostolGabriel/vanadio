@@ -47,22 +47,21 @@
   width: 16px;
   border: none;
   cursor: pointer;
-  background-image: url("../../../../public/hamburger.svg");
+  background-image: url("../../../../../public/hamburger.svg");
 }
 
 .menu-button:hover {
-  background-image: url("../../../../public/hamburger-hover.svg");
+  background-image: url("../../../../../public/hamburger-hover.svg");
 }
 
 ul {
-  list-style-type: none;
-  margin: 3rem;
-  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Space between list items */
-  width: 80%;
-  align-items: center;
+  justify-content: center; /* Center items vertically */
+  padding: 0;
+  margin: 20rem 0 0 0; /* Add margin-top to move it down */
+  gap: 20px;
+  width: 80%; /* Adjust width as needed */
 }
 
 li {
@@ -75,8 +74,16 @@ li {
 }
 
 @media (max-width: 710px) {
-  ul {
-    font-size: 20px;
-    height: auto;
+
+  .text-link {
+    color: #393838;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }

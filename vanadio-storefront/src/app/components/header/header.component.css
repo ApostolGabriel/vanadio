@@ -37,7 +37,7 @@ li {
 
 app-header-menu {
   position: absolute; /* You can use relative or fixed as well */
-  z-index: 1; /* Lower value, will appear behind */
+  z-index: 10; /* Lower value, will appear behind */
 }
 
 app-hamburger {
@@ -83,7 +83,7 @@ a {
 
   /* Adjusted styles for the right section to be on the left and occupy 20% of the width */
   .mobile-header .right {
-    flex: 0 0 20%; /* Takes up 20% of the available width */
+    flex: 0 0 10%; /* Takes up 20% of the available width */
   }
 
   /* Adjusted styles for the left section to take up the remaining width */
@@ -101,9 +101,10 @@ a {
   .menu-button {
     display: block;
   }
+
   app-hamburger {
     display: block;
-    z-index: 10; /* Higher value, will appear in front */
+    z-index: 20; /* Higher value, will appear in front */
   }
 
 }

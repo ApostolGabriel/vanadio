@@ -19,7 +19,7 @@ p, body, a {
   background: none repeat scroll 0 0 #E52F00;
   content: "";
   display: block;
-  height: 2px;
+  height: 3px;
   width: 0;
 }
 
@@ -48,3 +48,4 @@ p, body, a {
   width: 176px;
   box-shadow: inset 2px 0px 20px #1c1c1c;
 }
+
