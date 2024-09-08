@@ -1,20 +1,18 @@
-import {Component, HostListener, Output} from '@angular/core';
+import {Component, HostListener, Input} from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-
-  menuToggle: boolean = false;
-
+  @Input() menuToggle: boolean = false
 
   openMenu() {
     this.menuToggle = !this.menuToggle;
   }
 
-  closeMenu() {
+  closeMenuFromChild(event: string) {
     this.menuToggle = false;
   }
 
@@ -25,5 +23,4 @@ export class HeaderComponent {
       this.menuToggle = false;
     }
   }
-
 }

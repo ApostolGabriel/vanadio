@@ -9,6 +9,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { EventsComponent } from './components/events/events.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderMenuComponent } from './components/header-menu/header-menu.component';
+import { HamburgerComponent } from './components/hamburger/hamburger.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HeaderMenuComponent } from './components/header-menu/header-menu.compon
     EventsComponent,
     FooterComponent,
     HeaderMenuComponent,
+    HamburgerComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,22 @@
 <nav>
   <div class="mobile-header-menu">
     <div class="mobile-header">
-      <a routerLink="/"><img src="/logo-horizontal.svg" alt="Vanadio" class="logo"></a>
-      <button *ngIf="!menuToggle" (click)="openMenu()" class="menu"></button>
+      <div class="left">
+        <a routerLink="/"><img src="/logo-horizontal.svg" alt="Vanadio" class="logo">
+        </a>
+      </div>
+      <div class="right">
+        <app-hamburger (click)="openMenu()"
+                       [menuOpen]="menuToggle"></app-hamburger>
+      </div>
+      <app-header-menu
+        [menuToggle]="menuToggle"
+        (closeMenu)="closeMenuFromChild($event)">
+      </app-header-menu>
     </div>
   </div>
-  <app-header-menu *ngIf="menuToggle"></app-header-menu>
+
+
   <ul>
     <li><a class="text-link" routerLink="/">ACASĂ</a></li>
     <li><a class="text-link" routerLink="/events">EVENIMENTE</a></li>

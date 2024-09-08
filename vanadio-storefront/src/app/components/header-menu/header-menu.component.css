@@ -2,27 +2,48 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 12rem;
+  width: 100%;
   background-color: #Ebeae8;
-  align-items: center;
-  gap: 30px;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 1000;
-  transform: translateX(100%);
+
+  /* Initial hidden state - positioned above the viewport */
+  transform: translateY(-100%);
   opacity: 0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+
+  /* Smooth transition for both transform and opacity */
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .menu.show {
-  transform: translateX(0);
+  transform: translateY(0); /* Move to visible position */
   opacity: 1;
 }
 
+.menu.hidden {
+  transform: translateY(-100%); /* Move back to hidden position */
+  opacity: 0;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Allow positioning of child elements */
+  padding: 20px; /* Add padding to ensure button doesn't overlap content */
+}
+
 .menu-button {
+  position: absolute; /* Position button relative to menu-content */
+  top: 20px; /* Adjust the top position as needed */
+  right: 20px; /* Adjust the right position as needed */
   background-color: transparent;
-  height: 16px;
+  height: 14px;
   width: 16px;
   border: none;
   cursor: pointer;
@@ -35,16 +56,22 @@
 
 ul {
   list-style-type: none;
-  margin: 0;
+  margin: 3rem;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 100%;
+  gap: 20px; /* Space between list items */
+  width: 80%;
+  align-items: center;
 }
 
 li {
   list-style-type: none;
+}
+
+:host {
+  position: absolute;
+  z-index: 10;
 }
 
 @media (max-width: 710px) {
