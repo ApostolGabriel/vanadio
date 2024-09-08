@@ -31,3 +31,32 @@
     width: 440px;
     margin-bottom: 32px;
 }
+
+.mobile-title {
+    display: none;
+}
+
+
+.mobile-subtitle {
+    display: none;
+}
+
+@media(max-width: 710px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-background, .home-logo, .home-presentation {
+        display: none;
+    }
+
+    .mobile-title {
+        height: 44px;
+    }
+
+    p.title {
+        font-size: 32px;
+        font-weight: 700;
+    }
+}
