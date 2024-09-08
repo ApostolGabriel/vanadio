@@ -1,0 +1,164 @@
+/* Ensure the container is centered */
+.container {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center horizontally */
+  width: 20rem; /* Adjust width as needed */
+  height: 60vh; /* Full viewport height for vertical centering */
+  margin-left: 3.5rem; /* Adjust as needed */
+}
+
+/* Styles for h1 */
+h1 {
+  align-self: flex-start; /* Aligns h1 at the start of the container */
+  color: #6d6d6d;
+  font-size: 30px;
+  font-weight: 800;
+  padding: 0;
+  margin: 0;
+  text-align: center; /* Center text */
+}
+
+/* Style for the red line */
+.red-line {
+  width: 60%; /* Set the width of the red line */
+  align-self: flex-start; /* Center the red line horizontally */
+  height: 10px; /* Set the height of the red line */
+  background-color: #cb1a1a; /* Red color */
+  margin-top: 1rem; /* Space between h1 and the red line */
+}
+
+/* Styles for banner content */
+.banner-content {
+  display: flex;
+  flex-direction: column; /* Stack p elements vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  text-align: center; /* Center text within p elements */
+  width: 80%; /* Full width of the container */
+  padding: 1rem; /* Padding for spacing */
+}
+
+/* Styles for paragraphs within banner content */
+.banner-content p {
+  margin: 1rem 0; /* Space between paragraphs */
+  line-height: 1.6; /* Line height for readability */
+  font-size: 16px; /* Adjust font size as needed */
+  color: #333; /* Text color */
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center horizontally */
+  width: 20rem; /* Adjust width as needed */
+  height: 15rem; /* Full viewport height for vertical centering */
+  margin-left: 3.5rem; /* Adjust as needed */
+}
+
+.banner-contact-row {
+  display: flex;
+  width: 15rem;
+  flex-direction: row;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Distribute items evenly with space between */
+  margin: 8px 25%; /* Margin for top, bottom, left, and right */
+  padding: 10px; /* Add padding for better spacing */
+  border-radius: 5px; /* Optional: Rounded corners for the block */
+}
+
+/* Optional: Style for the image */
+.banner-contact-row img {
+  max-width: 50px; /* Limit the size of the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between image and text */
+}
+
+/* Optional: Style for the text block */
+.banner-contact-row .text {
+  flex: 1; /* Allow text block to take up remaining space */
+  font-size: 16px; /* Adjust font size as needed */
+  color: #333; /* Text color */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+.registration-background {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 20px #464542;
+  background-color: #Ebeae8;
+  border-radius: 20px;
+}
+
+.registration-content {
+  margin: 60px 40px 60px 40px;
+}
+
+.registration-bar {
+  background-color: #cb1a1a;
+  height: 8px;
+  width: 60%;
+  border-radius: 2px;
+}
+input[type=text] {
+  border: none;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  border-radius: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+textarea {
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  resize: none;
+  font-size: 17px;
+  border-radius: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 120px;
+}
+
+input[type=text]::placeholder, textarea::placeholder {
+  color: #B6B8B7;
+}
+
+input[type=text], textarea {
+  transition: box-shadow 0.3s ease-out;
+  color: #696969;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+input[type=text]:focus, textarea:focus {
+  box-shadow: 2px 2px 20px #767470 ;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
+
+.button-background {
+  height: 100px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}

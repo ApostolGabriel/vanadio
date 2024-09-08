@@ -43,19 +43,81 @@ app-header-menu {
 app-hamburger {
   display: none;
 }
+
 a {
-    color: #393838;
-    font-size: 24px;
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 400;
-    display: inline-block;
-    margin-right: 10px;
-    margin-left: 10px;
+  color: #393838;
+  font-size: 24px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .selected {
-    border-bottom: 2px solid #E52F00;
+  border-bottom: 2px solid #E52F00;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88px;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.logo {
+  height: 88px;
+}
+
+.menu-button {
+
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  background-image: url("../../../../public/hamburger.svg");
+}
+
+.menu-button:hover {
+  background-image: url("../../../../public/hamburger-hover.svg");
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  list-style-type: none;
+}
+
+app-header-menu {
+  position: absolute; /* You can use relative or fixed as well */
+  z-index: 10; /* Lower value, will appear behind */
+}
+
+app-hamburger {
+  display: none;
+}
+
+a {
+  color: #393838;
+  font-size: 24px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.selected {
+  border-bottom: 2px solid #E52F00;
 }
 
 @media (max-width: 710px) {
@@ -65,7 +127,7 @@ a {
   }
 
   .logo {
-    height: 88px;
+    height: 30px;
   }
 
   .mobile-header {
@@ -108,3 +170,4 @@ a {
   }
 
 }
+

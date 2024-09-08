@@ -16,6 +16,7 @@ import { PresentationComponent } from './components/home/presentation/presentati
 import { ContactRegistrationComponent } from './components/contact-us/contact-registration/contact-registration.component';
 import { ContactBannerComponent } from './components/contact-us/contact-banner/contact-banner.component';
 import { HamburgerComponent } from './components/header/hamburger/hamburger.component';
+import { ContactBannerMobileComponent } from './components/contact-us/contact-banner-mobile/contact-banner-mobile.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { HamburgerComponent } from './components/header/hamburger/hamburger.comp
     ContactRegistrationComponent,
     ContactBannerComponent,
     HamburgerComponent,
+    ContactBannerMobileComponent,
   ],
   imports: [
     BrowserModule,
