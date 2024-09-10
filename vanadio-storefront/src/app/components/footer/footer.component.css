@@ -53,17 +53,17 @@ li {
 }
 
 li::before {
-    content: ''; 
-    display: inline-block; 
-    width: 8px; 
-    height: 8px; 
-    background-color: black; 
-    border-radius: 2px; 
-    margin-right: 10px; 
-    position: absolute; 
-    left: -15px; 
-    top: 50%; 
-    transform: translateY(-50%); 
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 2px;
+    margin-right: 10px;
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 li:hover {
@@ -75,7 +75,7 @@ li:hover {
     footer {
         font-size: 16px;
         height: 374px;
-    }   
+    }
 
     .footer-middle {
         flex-direction: column;

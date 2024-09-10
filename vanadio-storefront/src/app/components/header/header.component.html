@@ -1,12 +1,20 @@
 <nav>
-    <div class="mobile-header-menu">
-        <div class="mobile-header">
-            <a routerLink="/"><img src="/logo-horizontal.svg" alt="Vanadio" class="logo"></a>
-            <button (click)="openMenu()" class="menu">
-            </button>
-        </div>
-        <app-header-menu *ngIf="menuToggle"></app-header-menu>
+  <div class="mobile-header-menu">
+    <div class="mobile-header">
+      <div class="left">
+        <a routerLink="/"><img src="/logo-horizontal.svg" alt="Vanadio" class="logo">
+        </a>
+      </div>
+      <div class="right">
+        <app-hamburger (click)="openMenu()"
+                       [menuOpen]="menuToggle"></app-hamburger>
+      </div>
+      <app-header-menu
+        [menuToggle]="menuToggle"
+        (closeMenu)="closeMenuFromChild($event)">
+      </app-header-menu>
     </div>
+  </div>
     <ul>
         <li><a [ngClass]="isActive('/') ? 'selected' : 'text-link'" [routerLink]="'/'">ACASĂ</a></li>
         <li><a [ngClass]="isActive('/events') ? 'selected' : 'text-link'" [routerLink]="'/events'">EVENIMENTE</a></li>

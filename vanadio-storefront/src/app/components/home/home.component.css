@@ -107,3 +107,7 @@
         align-self: center;
     }
 }
+
+
+@media (max-width: 710px){
+}

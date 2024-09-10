@@ -1,20 +1,89 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: #Ebeae8;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+
+  /* Initial hidden state - positioned above the viewport */
+  transform: translateY(-100%);
+  opacity: 0;
+
+  /* Smooth transition for both transform and opacity */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.menu.show {
+  transform: translateY(0); /* Move to visible position */
+  opacity: 1;
+}
+
+.menu.hidden {
+  transform: translateY(-100%); /* Move back to hidden position */
+  opacity: 0;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Allow positioning of child elements */
+  padding: 20px; /* Add padding to ensure button doesn't overlap content */
+}
+
+.menu-button {
+  position: absolute; /* Position button relative to menu-content */
+  top: 20px; /* Adjust the top position as needed */
+  right: 20px; /* Adjust the right position as needed */
+  background-color: transparent;
+  height: 14px;
+  width: 16px;
+  border: none;
+  cursor: pointer;
+  background-image: url("../../../../../public/hamburger.svg");
+}
+
+.menu-button:hover {
+  background-image: url("../../../../../public/hamburger-hover.svg");
+}
 
 ul {
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  padding: 0;
+  margin: 20rem 0 0 0; /* Add margin-top to move it down */
+  gap: 20px;
+  width: 80%; /* Adjust width as needed */
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
+:host {
+  position: absolute;
+  z-index: 10;
+}
 
+@media (max-width: 710px) {
 
-
-@media (max-width: 710px){
-    ul {
-        flex-direction: column;
-        background-color: #Ebeae8;
-        font-size: 20px;
-        height: 40px;
-    }
+  .text-link {
+    color: #393838;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }

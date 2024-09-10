@@ -1,5 +1,7 @@
-<ul>
-    <li><a class="text-link" routerLink="/">ACASĂ</a></li>
-    <li><a class="text-link" routerLink="/events">EVENIMENTE</a></li>
-    <li><a class="text-link" routerLink="/contact">CONTACT</a></li>
-</ul>
+<div class="menu" [ngClass]="{'show': menuToggle, 'hidden': !menuToggle}">
+  <ul>
+    <li><a (click)="onCloseMenu()" class="text-link" routerLink="/">ACASĂ</a></li>
+    <li><a (click)="onCloseMenu()" class="text-link" routerLink="/events">EVENIMENTE</a></li>
+    <li><a (click)="onCloseMenu()" class="text-link" routerLink="/contact">CONTACT</a></li>
+  </ul>
+</div>
