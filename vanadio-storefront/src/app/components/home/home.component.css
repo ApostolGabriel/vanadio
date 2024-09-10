@@ -41,22 +41,69 @@
     display: none;
 }
 
+.mobile-line {
+    background-color: #E52F00;
+    height: 8px;
+    width: 50%;
+    border-radius: 2px;
+    align-self: center;
+    display: none;
+}
+
+.mobile-presentation {
+    display: none;
+}
+
 @media(max-width: 710px) {
     .home {
         display: flex;
         flex-direction: column;
+        height: auto;
     }
 
     .home-background, .home-logo, .home-presentation {
         display: none;
     }
 
-    .mobile-title {
-        height: 44px;
+    .mobile-title, .mobile-subtitle {
+        display: block;
+        text-align: center;
     }
+
+    .mobile-line {
+        display: block;
+    }
+
 
     p.title {
         font-size: 32px;
-        font-weight: 700;
+        font-weight: 900;
+        height: 32px;
+        padding: 0px;
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+
+    p.subtitle {
+        font-size: 24px;
+        letter-spacing: 2px;
+        height: 24px;
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+
+    .mobile-logo {
+        margin-top: 32px;
+        width: 90%;
+        height: 440px;
+        margin-bottom: 40px;
+        align-self: center;
+    }
+
+    .mobile-presentation {
+        display: block;
+        width: 90%;
+        height: 70%;
+        align-self: center;
     }
 }

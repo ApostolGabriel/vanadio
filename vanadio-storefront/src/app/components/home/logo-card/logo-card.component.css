@@ -29,6 +29,30 @@ img {
     justify-content: center;
 }
 
+.button-for-page {
+    display: none;
+}
+
 .socials-centering {
     width: 40%;
+}
+
+@media(max-width:710px) {
+    img {
+        height: 224px;
+        margin-bottom: 40px;
+    }
+
+    .button-for-page {
+        display: block;
+        width: 164px;
+    }
+
+    .button-for-page:hover {
+        background-color: #E52F00;
+    }
+
+    .logo-background {
+        flex-direction: column;
+    }
 }

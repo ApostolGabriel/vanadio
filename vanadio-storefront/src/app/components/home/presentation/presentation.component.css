@@ -49,5 +49,36 @@ p {
     margin-top: auto;
 }
 
+@media(max-width:710px) {
+    p.title {
+        font-size: 24px;
+        color: #E52F00;
+    }
 
+    #about {
+        display: none;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .presentation-content {
+        height: auto;
+    }
+
+    .presentation-buttons {
+        justify-content: center;
+        margin-bottom: 32px;
+    }
+
+    .presentation-title {
+        height: 40px;
+        margin-bottom: 8px;
+    }
+
+    .presentation-title-bar {
+        display: none;
+    }
+}
 
