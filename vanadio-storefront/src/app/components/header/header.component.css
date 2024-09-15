@@ -3,7 +3,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 88px;
+  height: auto;
   padding-left: 48px;
   padding-right: 48px;
 }
@@ -12,19 +12,6 @@ nav {
   height: 88px;
 }
 
-.menu-button {
-
-  display: none;
-  background-color: transparent;
-  border: none;
-  color: inherit;
-  cursor: pointer;
-  background-image: url("../../../../public/hamburger.svg");
-}
-
-.menu-button:hover {
-  background-image: url("../../../../public/hamburger-hover.svg");
-}
 
 ul {
   display: flex;
@@ -36,8 +23,8 @@ li {
 }
 
 app-header-menu {
-  position: absolute; /* You can use relative or fixed as well */
-  z-index: 10; /* Lower value, will appear behind */
+  position: absolute; 
+  z-index: 10; 
 }
 
 app-hamburger {
@@ -45,7 +32,7 @@ app-hamburger {
 }
 
 a {
-  color: #393838;
+  color: #696969;
   font-size: 24px;
   text-decoration: none;
   font-style: normal;
@@ -60,98 +47,34 @@ a {
 }
 
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 88px;
-  padding-left: 48px;
-  padding-right: 48px;
-}
-
-.logo {
-  height: 88px;
-}
-
-.menu-button {
-
-  display: none;
-  background-color: transparent;
-  border: none;
-  color: inherit;
-  cursor: pointer;
-  background-image: url("../../../../public/hamburger.svg");
-}
-
-.menu-button:hover {
-  background-image: url("../../../../public/hamburger-hover.svg");
-}
-
-ul {
-  display: flex;
-  flex-direction: row;
-}
-
-li {
-  list-style-type: none;
-}
-
-app-header-menu {
-  position: absolute; /* You can use relative or fixed as well */
-  z-index: 10; /* Lower value, will appear behind */
-}
-
-app-hamburger {
-  display: none;
-}
-
-a {
-  color: #393838;
-  font-size: 24px;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 400;
-  display: inline-block;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.selected {
-  border-bottom: 2px solid #E52F00;
-}
 
 @media (max-width: 710px) {
 
+  nav {
+    padding-left: 32px;
+  }
   ul {
     display: none;
   }
 
   .logo {
-    height: 30px;
+    height: 40px;
   }
 
   .mobile-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
+    margin-left: 0px;
   }
 
-  .mobile-header .left,
-  .mobile-header .right {
+  .mobile-header-centering {
+    width: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 16px;
   }
 
-  /* Adjusted styles for the right section to be on the left and occupy 20% of the width */
-  .mobile-header .right {
-    flex: 0 0 10%; /* Takes up 20% of the available width */
-  }
-
-  /* Adjusted styles for the left section to take up the remaining width */
-  .mobile-header .left {
-    flex: 1; /* Takes up the remaining space */
-  }
+  
 
   .mobile-header-menu {
     display: flex;
@@ -166,7 +89,8 @@ a {
 
   app-hamburger {
     display: block;
-    z-index: 20; /* Higher value, will appear in front */
+    z-index: 20; 
+    left: 80%;
   }
 
 }

@@ -1,13 +1,10 @@
 <nav>
   <div class="mobile-header-menu">
     <div class="mobile-header">
-      <div class="left">
-        <a routerLink="/"><img src="/logo-horizontal.svg" alt="Vanadio" class="logo">
-        </a>
-      </div>
-      <div class="right">
-        <app-hamburger (click)="openMenu()"
-                       [menuOpen]="menuToggle"></app-hamburger>
+      <div class="mobile-header-centering">
+        <a routerLink="/"><img src="/logo-horizontal.svg" alt="Vanadio" class="logo"></a>
+      
+        <app-hamburger (click)="openMenu()" [menuOpen]="menuToggle"></app-hamburger>
       </div>
       <app-header-menu
         [menuToggle]="menuToggle"

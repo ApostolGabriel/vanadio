@@ -36,12 +36,7 @@
 }
 @media (max-width: 710px) {
 
-  .contact-us-background {
-    display: flex;
-    flex-direction: column;
-  }
-
-  contact.contact-us-background{
+  .contact-us-background{
     display: none;
   }
   .contact-us-color-banner {
