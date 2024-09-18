@@ -3,11 +3,23 @@
         <h1>CONTACTEAZĂ-NE</h1>
         <div class="registration-bar"></div>
         <form>
-            <input type="text" id="name" placeholder="NUME" class="input-field">
-            <input type="text" id="address" placeholder="E-MAIL" class="input-field">
-            <textarea placeholder="MESAJ" class="input-field"></textarea>
+            <input type="text" id="name" placeholder="NUME" 
+                name="name" [(ngModel)]="name">
+            <input type="text" id="email" placeholder="E-MAIL" 
+                name="email" [(ngModel)]="email">
+            <textarea placeholder="MESAJ" id="message"
+                name="message" [(ngModel)]="message"></textarea>
             <div class="button-background">
-                <button class="button-for-page">TRIMITE</button>
+                <button class="button-for-page" (click)="sendEmail()">TRIMITE</button>
+            </div>
+            <div id="send-email-dialog">
+                <div id="dialog-background">
+                    <div id="dialog-content">
+                        <span class="close" (click)="onClose()">&times;</span>
+                        <div id="response"></div>
+                        <button id="dialog-button" (click)="onClose()" class="button-for-page">Am înteles.</button>
+                    </div>
+                </div>
             </div>
         </form>
     </div>

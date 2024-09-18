@@ -90,3 +90,46 @@ input[type=text]:focus {
     align-items: center;
 }
 
+#send-email-dialog {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 50;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: display 0.5 ease;
+}
+
+#dialog-content {
+    height: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+}
+
+.close {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    color: #696969;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #1e1e1e;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#dialog-button {
+    align-self: center;
+    height:48px;
+    margin-bottom: 1rem;
+}

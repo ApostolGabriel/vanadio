@@ -17,6 +17,10 @@ import { ContactRegistrationComponent } from './components/contact-us/contact-re
 import { ContactBannerComponent } from './components/contact-us/contact-banner/contact-banner.component';
 import { HamburgerComponent } from './components/header/hamburger/hamburger.component';
 import { ContactBannerMobileComponent } from './components/contact-us/contact-banner-mobile/contact-banner-mobile.component';
+import { provideHttpClient, withFetch } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+ 
 
 @NgModule({
   declarations: [
@@ -38,10 +42,13 @@ import { ContactBannerMobileComponent } from './components/contact-us/contact-ba
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    FormsModule,
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideHttpClient( withFetch() ),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })
