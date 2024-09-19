@@ -110,6 +110,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/vanadio-storefront",
+            "netlifyToken": "nfp_TexnjGUhKaRxGazHKBruFj1s9HgN29JA58f0",
+            "siteId": "ff24aef6-2897-4354-be21-e9340f152064"
+          }
         }
       }
     }
