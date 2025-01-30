@@ -78,9 +78,9 @@ export class ContactRegistrationComponent {
     if(open) {
       modal!.style.display = 'flex';
     } else {
-      do {
+      while (responseDiv?.children.length !== 0) {
         responseDiv?.removeChild(responseDiv?.lastChild!);
-      } while (responseDiv?.children.length !== 0)
+      } 
       modal!.style.display = 'none';
       
     }
